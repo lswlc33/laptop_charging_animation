@@ -26,6 +26,13 @@ class Ui_animation(object):
         self.label.setPixmap(QtGui.QPixmap(":/img/res/img1.png"))
         self.label.setScaledContents(True)
         self.label.setObjectName("label")
+        self.label_2 = QtWidgets.QLabel(animation)
+        self.label_2.setGeometry(QtCore.QRect(250, 190, 281, 91))
+        font = QtGui.QFont()
+        font.setFamily("微软雅黑")
+        font.setPointSize(30)
+        self.label_2.setFont(font)
+        self.label_2.setObjectName("label_2")
 
         self.retranslateUi(animation)
         QtCore.QMetaObject.connectSlotsByName(animation)
@@ -33,4 +40,5 @@ class Ui_animation(object):
     def retranslateUi(self, animation):
         _translate = QtCore.QCoreApplication.translate
         animation.setWindowTitle(_translate("animation", "animation"))
+        self.label_2.setText(_translate("animation", "电源模式！"))
 import res_rc
